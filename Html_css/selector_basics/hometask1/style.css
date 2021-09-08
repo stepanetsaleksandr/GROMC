@@ -1,0 +1,27 @@
+href[target="_blank"] {
+  color: green;
+}
+
+ul {
+  background-color: yellow;
+}
+
+footer header {
+  border: 3px dashed blue;
+}
+
+h {
+  margin-left: 20px;
+}
+
+article.new {
+  font-size: 24px;
+}
+
+li.topic.new {
+  background-color: red;
+}
+
+.new.posted-today {
+  background-color: pink;
+}
