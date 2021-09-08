@@ -1,12 +1,13 @@
-href[target="_blank"] {
+a[target="_blank"] {
   color: green;
 }
 
-ul {
+li {
   background-color: yellow;
 }
 
-footer header {
+footer,
+header {
   border: 3px dashed blue;
 }
 
