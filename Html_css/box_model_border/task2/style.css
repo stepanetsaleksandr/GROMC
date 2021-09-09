@@ -1,5 +1,5 @@
 div {
-  box-sizing: border-box;
+  box-sizing: content-box;
   background-color: bisque;
   width: 420px;
   height: 140px;
