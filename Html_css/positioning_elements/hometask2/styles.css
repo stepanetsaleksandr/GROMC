@@ -4,21 +4,20 @@
 }
 
 .navigation {
-  position: relative;
-
   height: 40px;
+  line-height: 40px;
 }
 
 .navigation ul {
-  position: absolute;
-  top: 50%;
-  margin-top: -0.625em;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .navigation ul li {
   color: white;
   float: left;
   margin-left: 16px;
+  list-style-type: none;
 }
 
 .content {
