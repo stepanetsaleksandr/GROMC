@@ -2,26 +2,36 @@
   box-sizing: border-box;
 }
 
-.red {
-  position: relative;
+div {
+  height: 200px;
+}
+
+.block_red {
   float: left;
   background-color: red;
+  width: 20%;
 }
 
-.green {
-  position: relative;
+.block_green {
   float: left;
   background-color: green;
+  width: 20%;
 }
 
-.blue {
+.block_blue {
+  float: left;
   background-color: blue;
+  width: 20%;
 }
 
-.yellow {
+.block_yellow {
+  float: left;
   background-color: yellow;
+  width: 20%;
 }
 
-.black {
+.block_black {
+  float: left;
   background-color: black;
+  width: 20%;
 }
