@@ -1,16 +1,18 @@
 .header {
   background-color: darkturquoise;
   height: 40px;
-}
-
-.navigation {
-  height: 40px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
   line-height: 40px;
 }
 
-.navigation ul {
+.navigation {
   white-space: nowrap;
   overflow: hidden;
+}
+
+.navigation ul {
 }
 
 .navigation ul li {
