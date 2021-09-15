@@ -1,21 +1,24 @@
 .header {
   background-color: darkturquoise;
   height: 40px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
 .navigation {
-  position: relative;
-
-  height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
 }
 
-.navigation ul {
+.nav-list {
   position: absolute;
   top: 50%;
   margin-top: -0.625em;
 }
 
-.navigation ul li {
+.nav-item {
   color: white;
   float: left;
   margin-left: 16px;
