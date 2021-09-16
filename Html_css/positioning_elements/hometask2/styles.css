@@ -1,80 +1,79 @@
-.header {
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: darkturquoise;
   height: 40px;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
-
-.navigation {
-  white-space: nowrap;
-  overflow: hidden;
-  vertical-align: middle;
+li {
+  list-style: none;
 }
-
+nav {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
 .nav-list {
-  position: absolute;
-  top: 50%;
-  margin-top: -0.625em;
+  display: flex;
+  flex-direction: row;
 }
-
 .nav-item {
-  color: white;
-  float: left;
+  display: flex;
+  align-items: center;
+  height: 40px;
   margin-left: 16px;
-  list-style-type: none;
+  color: #fff;
 }
-
-.content {
-  height: 5000px;
+main {
   background-color: beige;
+  height: 5000px;
+  display: flex;
+  justify-content: center;
 }
-
 .head {
-  position: absolute;
+  display: flex;
+  position: relative;
+  top: calc(50vh - 100px);
+  background-color: aquamarine;
   height: 200px;
   width: 200px;
-  background: red;
-  top: calc(50% - 100px);
-  left: calc(50% - 100px);
-
-  background-color: aquamarine;
+  z-index: 1;
 }
 .ear {
-  margin-top: -60px;
+  width: 40px;
+  height: 60px;
+  background-color: brown;
 }
 .ear_right {
-  position: relative;
-  float: left;
-  height: 60px;
-  width: 40px;
-  background-color: brown;
-  margin-left: -40px;
+  position: absolute;
+  right: -40px;
+  top: -60px;
 }
 .ear_left {
-  position: relative;
-  float: right;
-  height: 60px;
-  width: 40px;
-  background-color: brown;
-  margin-right: -40px;
+  position: absolute;
+  left: -40px;
+  top: -60px;
 }
 .eye {
-  height: 30px;
-  width: 30px;
+  background-color: grey;
   border-radius: 50%;
-  position: relative;
-  margin-top: 80px;
-  margin-left: 40px;
-
-  background-color: gray;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
 }
 .eye_right {
-  position: relative;
-  float: left;
+  position: absolute;
+  top: 80px;
+  right: 40px;
 }
 .eye_left {
-  position: relative;
-  float: right;
-  margin-right: 40px;
+  position: absolute;
+  top: 80px;
+  left: 40px;
 }
