@@ -1,0 +1,17 @@
+div.block {
+  background-color: coral;
+  margin: 8px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.block {
+  height: 100px;
+  width: 100px;
+}
