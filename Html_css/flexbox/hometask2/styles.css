@@ -1,0 +1,19 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.articles-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.article {
+  background-color: bisque;
+  flex-basis: 300px;
+  margin: 8px;
+  padding: 16px;
+}
