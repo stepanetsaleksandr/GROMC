@@ -62,9 +62,11 @@ body {
 
 .navigation-list {
   margin: 0;
+  padding: 0;
   display: flex;
   list-style-type: none;
 }
 
 .navigation-item {
+  margin-left: 16px;
 }
