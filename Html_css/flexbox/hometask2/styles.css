@@ -19,7 +19,7 @@ header {
 
 .article {
   background-color: bisque;
-  flex-basis: 300px;
+  flex-basis: 250px;
   margin: 8px;
   padding: 16px;
   flex-grow: 1;
