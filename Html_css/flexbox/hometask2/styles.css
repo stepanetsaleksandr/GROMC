@@ -14,7 +14,6 @@ header {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
-  flex-shrink: 1;
 }
 
 .article {
@@ -23,4 +22,5 @@ header {
   margin: 8px;
   padding: 16px;
   flex-grow: 1;
+  flex-shrink: 1;
 }
