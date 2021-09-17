@@ -20,5 +20,5 @@ header {
   margin: 8px;
   padding: 16px;
   flex-grow: 1;
-  flex-shrink: 1;
+  flex-shrink: 0;
 }
