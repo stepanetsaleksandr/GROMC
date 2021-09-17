@@ -4,12 +4,13 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-content: center;
 }
 
 .articles-list {
   display: flex;
+  flex-basis: 100vh;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
@@ -17,7 +18,7 @@ header {
 
 .article {
   background-color: bisque;
-  flex-basis: 300px;
+  flex-basis: 250px;
   margin: 8px;
   padding: 16px;
   flex-shrink: 0;
