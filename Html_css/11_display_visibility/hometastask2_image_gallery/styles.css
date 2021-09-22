@@ -1,0 +1,8 @@
+.gallery {
+  display: flex;
+  overflow: auto;
+}
+
+img {
+  margin: 8px;
+}
