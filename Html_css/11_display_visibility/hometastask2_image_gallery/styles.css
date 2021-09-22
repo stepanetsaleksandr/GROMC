@@ -1,6 +1,7 @@
 .gallery {
   display: flex;
   overflow: auto;
+  cursor: all-scroll;
 }
 
 img {
