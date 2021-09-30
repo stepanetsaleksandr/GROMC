@@ -1,8 +1,8 @@
-div {
+div.rectangle {
   background-color: blueviolet;
 }
 
-.text::first-letter {
+p.text::first-letter {
   color: green;
   font-size: 24px;
 }
