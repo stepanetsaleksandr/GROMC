@@ -4,8 +4,6 @@ html {
 
 h1 {
   font-size: 74px;
-  word-spacing: 20px;
-
   text-align: center;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -20,4 +18,5 @@ div {
   text-transform: uppercase;
   text-align: center;
   line-height: 200px;
+  vertical-align: auto;
 }
