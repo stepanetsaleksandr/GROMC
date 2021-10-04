@@ -1,6 +1,3 @@
-* {
-  box-sizing: border-box;
-}
 table {
   margin: 16px;
   width: 500px;
@@ -10,6 +7,7 @@ td,
 th {
   border: 1px solid black;
   border-collapse: collapse;
+  border-spacing: 0;
 }
 
 tfoot {
