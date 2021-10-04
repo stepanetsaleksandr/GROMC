@@ -24,6 +24,7 @@ th {
 th {
   background-color: aqua;
   align-items: center;
+  padding-top: 8px;
 }
 
 tr {
