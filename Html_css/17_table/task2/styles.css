@@ -17,10 +17,10 @@ td,
 th {
   text-align: right;
   height: 40px;
+  padding: 4px;
 }
 th {
   background-color: aqua;
-  padding: 4px;
 }
 
 div {
