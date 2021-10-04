@@ -25,6 +25,7 @@
   text-align: center;
 }
 .form-control {
+  display: block;
   margin-bottom: 8px;
 }
 .form-input {
@@ -41,6 +42,8 @@
 }
 
 .form-label {
+  display: block;
+
   margin-bottom: 4px;
 }
 .submit-button {
