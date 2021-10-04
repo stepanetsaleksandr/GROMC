@@ -15,9 +15,9 @@ tfoot {
 
 td,
 th {
-  text-align: right;
-  height: 40px;
   padding: 4px;
+  text-align: right;
+  line-height: 40px;
 }
 th {
   background-color: aqua;
