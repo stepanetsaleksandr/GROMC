@@ -1,9 +1,12 @@
 * {
   box-sizing: border-box;
 }
-html {
+.page {
   display: flex;
   background-color: bisque;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -16,11 +19,6 @@ html {
   font-family: monospace;
   width: 300px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 .form-title {
