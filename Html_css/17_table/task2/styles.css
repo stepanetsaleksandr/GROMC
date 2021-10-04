@@ -20,7 +20,7 @@ td,
 th {
   padding: 4px;
   text-align: right;
-  line-height: 40px;
+  line-height: 31px;
 }
 th {
   background-color: aqua;
@@ -28,6 +28,7 @@ th {
 
 div {
   overflow-x: auto;
+  overflow-y: 10px;
 }
 
 tr:hover {
