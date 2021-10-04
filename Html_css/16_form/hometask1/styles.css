@@ -8,8 +8,7 @@
 }
 
 .login-form {
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-color: aqua;
   margin: 0;
   font-size: 16px;
