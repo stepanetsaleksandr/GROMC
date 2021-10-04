@@ -22,7 +22,9 @@ th {
   text-align: right;
 }
 th {
+  position: relative;
   background-color: aqua;
+  line-height: 31px;
 }
 
 tr {
@@ -30,7 +32,6 @@ tr {
 }
 div {
   overflow-x: auto;
-  overflow-y: 10px;
 }
 
 caption {
