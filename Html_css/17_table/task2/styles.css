@@ -23,6 +23,7 @@ th {
 }
 th {
   background-color: aqua;
+  align-items: center;
 }
 
 tr {
