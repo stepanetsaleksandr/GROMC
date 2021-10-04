@@ -39,6 +39,7 @@ html {
   border-radius: 4px;
   padding: 4px;
   outline: none;
+  margin-bottom: 8px;
 }
 
 .form-input:invalid {
