@@ -20,12 +20,14 @@ td,
 th {
   padding: 4px;
   text-align: right;
-  line-height: 31px;
 }
 th {
   background-color: aqua;
 }
 
+tr {
+  line-height: 31px;
+}
 div {
   overflow-x: auto;
   overflow-y: 10px;
