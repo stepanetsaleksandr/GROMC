@@ -15,11 +15,11 @@ input[type="checkbox"] {
 }
 
 .checkbox {
-  padding-left: 35px;
+  padding-left: 30px;
   position: relative;
   font-size: 24px;
   margin: 16px;
-  top: 17px;
+  top: 16px;
   bottom: 16px;
 }
 
