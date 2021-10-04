@@ -22,9 +22,7 @@ th {
   text-align: right;
 }
 th {
-  position: relative;
   background-color: aqua;
-  line-height: 31px;
 }
 
 tr {
