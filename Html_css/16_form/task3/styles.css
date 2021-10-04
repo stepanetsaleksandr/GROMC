@@ -1,3 +1,7 @@
+body {
+  display: inline-block;
+}
+
 input[type="checkbox"] {
   visibility: hidden;
   width: 0;
