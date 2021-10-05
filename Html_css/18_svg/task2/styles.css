@@ -16,15 +16,14 @@
 .custom-button:hover {
   color: darkcyan;
 }
+.custom-button:hover > .bird {
+  fill: green;
+}
 
-.svg-icon {
+.bird {
   width: 32px;
   height: 32px;
   vertical-align: middle;
-}
-
-.svg-icon:hover {
-  fill: green !important;
 }
 
 .fas .fa-id-card {
