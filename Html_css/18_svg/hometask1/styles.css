@@ -1,7 +1,9 @@
 div {
   display: flex;
-  align-content: space-around;
+
+  justify-content: space-around;
 }
+
 .fa-battery-full {
   font-size: 16px;
 }
