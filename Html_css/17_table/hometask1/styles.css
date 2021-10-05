@@ -6,39 +6,44 @@ table {
   text-align: center;
 }
 table,
-td,
-th {
+td {
   border: 1px solid black;
   border-collapse: collapse;
 }
 
-td,
-th {
+td {
   width: 50px;
   height: 50px;
-}
-th {
-  border: none;
 }
 
 div {
   overflow-x: auto;
 }
 
-tbody > tr:nth-child(odd) > td:nth-child(odd) {
+tbody > tr:nth-child(odd) > td:nth-child(even) {
   background-color: black;
 }
 
-tbody > tr:nth-child(even) > td:nth-child(even) {
+tbody > tr:nth-child(even) > td:nth-child(odd) {
   background-color: black;
 }
 
-tbody > tr > td:first-child,
-td:last-child {
+tbody > tr:first-child > td {
+  background-color: white !important;
+  border: none;
+}
+
+tbody > tr:last-child > td {
+  background-color: white !important;
+  border: none;
+}
+
+tbody > tr > td:first-child {
   background-color: white !important;
   border: none !important;
 }
-tfoot > tr > td {
-  background-color: white;
+
+tbody > tr > td:last-child {
+  background-color: white !important;
   border: none !important;
 }
