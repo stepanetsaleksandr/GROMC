@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.block {
+  display: block;
+  top: -100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  width: 250px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 10px;
+  background-color: coral;
+  text-align: center;
+  animation: moving ease 2s;
+}
+
+@keyframes moving {
+  from {
+    top: -100px;
+  }
+  to {
+    top: calc(50vh - 50px);
+  }
+}
