@@ -1,12 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
 .row {
   display: flex;
   margin: auto;
   align-items: center;
-  width: 100%;
 }
 
 .small-bird {
@@ -21,8 +16,7 @@
 
 .column {
   display: flex;
-  margin: auto;
-  width: 50%;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
