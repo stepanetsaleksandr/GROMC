@@ -27,7 +27,6 @@ body {
 .main {
   display: flex;
   height: 100%;
-  font-size: 1.25em;
 }
 
 .navigation .section .news {
@@ -38,6 +37,7 @@ body {
 }
 .section {
   width: 60%;
+  font-size: 1.25em;
 }
 
 .news {
@@ -50,7 +50,7 @@ body {
 .css-units {
   color: #8b0000;
   background-color: #e5e5e5;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
@@ -71,7 +71,6 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 16px;
 }
 .nav-list-link {
   width: 100%;
