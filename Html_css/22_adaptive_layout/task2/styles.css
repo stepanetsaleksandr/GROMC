@@ -55,12 +55,10 @@ span {
 @media screen and (min-width: 900px) {
   .content {
     display: flex;
-    flex-grow: 2;
   }
 
   .products {
     display: flex;
-    flex-grow: 2;
   }
 
   .products-list {
@@ -72,6 +70,6 @@ span {
 
   .news {
     display: flex;
-    flex-grow: 1;
+    max-width: calc(100% / 3);
   }
 }
