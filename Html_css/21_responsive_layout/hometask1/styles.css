@@ -31,6 +31,7 @@ body {
 .main {
   display: flex;
   height: 100%;
+  line-height: 1;
 }
 
 .navigation .section .news {
