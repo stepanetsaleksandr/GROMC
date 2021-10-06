@@ -73,13 +73,14 @@ body {
   margin-bottom: 0.5em;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 .nav-list-link {
   width: 100%;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+
   color: #ffffff;
   text-decoration: none;
   line-height: 2em;
+  white-space: nowrap;
 }
