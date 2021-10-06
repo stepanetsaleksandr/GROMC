@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.spinner {
+  display: block;
+}
+
+.spinner-text {
+  font-family: monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  animation: blinking linear 2s infinite;
+  animation-play-state: running;
+}
+
+.rect {
+  width: 10px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: black;
+  animation: moving linear 2s infinite;
+  animation-play-state: running;
+}
+
+@keyframes moving {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    right: 70px;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

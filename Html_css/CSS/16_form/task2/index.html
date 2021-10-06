@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Наследование в CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form>
+      <div class="form-control">
+        <label for="lastName">Last Name
+        <input id="lastName" type="text" name="lastName" value="Emerson" readonly/>
+      </label>
+      </div>
+      <div class="form-control">
+        <label for="age">Age
+        <input id="age" type="number" value="17" name="age" min="3" max="10" required />
+      </label>
+      </div>
+      <div class="form-control">
+        <input type="checkbox" id="agree-therms-and-conditions" name="agree" disabled />
+        <label for="agree-therms-and-conditions">Accept terms and conditions</label>
+      </div>
+      <div class="choose-gender">
+        <input type="radio" name="gender" checked /><label for="gender"></label> Male</label
+        >
+        <input type="radio" name="gender" /><label for="gender"> Female</label
+        >
+        <input type="radio" name="gender" /><label for="gender"> Secret</label
+        >
+      </div>
+      <div class="form-control">
+        <textarea
+          name="description"
+          placeholder="Write description..."
+          maxlength="10"
+        ></textarea>
+      </div>
+      <div class="form-control">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

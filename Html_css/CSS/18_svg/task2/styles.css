@@ -1,0 +1,34 @@
+.custom-button {
+  margin: 64px;
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  background-color: coral;
+  color: white;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  line-height: 50px;
+}
+.custom-button:hover {
+  color: darkcyan;
+}
+.custom-button:hover > .bird {
+  fill: green;
+}
+
+.bird {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  fill: white;
+}
+
+.fas .fa-id-card {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}

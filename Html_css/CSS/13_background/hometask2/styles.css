@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+.bodyk {
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw2/background.jpg);
+  -webkit-background-repeat: repeat;
+}
