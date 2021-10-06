@@ -18,7 +18,6 @@ body {
 .main {
   display: flex;
   min-height: 100%;
-  margin: 0.5em;
 }
 
 .header {
@@ -42,6 +41,7 @@ body {
 .section {
   width: 60%;
   font-size: 1.25em;
+  margin: 0.5em;
 }
 
 .news {
