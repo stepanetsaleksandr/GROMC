@@ -9,14 +9,14 @@ body {
 
 .navigation {
   display: flex;
-  flex-grow: 2;
+  flex-grow: 21;
   background-color: #ff7f50;
   min-height: 200px;
 }
 
 .products-list {
   display: flex;
-  flex-grow: 2;
+  flex-grow: 1;
   background-color: #006400;
   min-height: 200px;
 }
@@ -25,7 +25,7 @@ body {
   display: flex;
   background-color: #0ff;
   min-height: 200px;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 span {
   background-color: #faebd7;
@@ -42,7 +42,7 @@ span {
 @media screen and (min-width: 600px) {
   .products {
     display: flex;
-    flex-grow: 2;
+    flex-grow: 1;
   }
   .products-list {
     min-width: 50%;
@@ -55,11 +55,12 @@ span {
 @media screen and (min-width: 900px) {
   .content {
     display: flex;
-    flex-grow: 3;
+    flex-grow: 2;
   }
 
   .products {
     display: flex;
+    flex-grow: 2;
   }
 
   .products-list {
@@ -70,5 +71,7 @@ span {
   }
 
   .news {
+    display: flex;
+    flex-grow: 1;
   }
 }
