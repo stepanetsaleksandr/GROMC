@@ -75,7 +75,7 @@ body {
 }
 .nav-list-link {
   width: 100%;
-  margin: 0.5em;
+  padding: 0.5em;
   color: #ffffff;
   text-decoration: none;
   line-height: 2em;
