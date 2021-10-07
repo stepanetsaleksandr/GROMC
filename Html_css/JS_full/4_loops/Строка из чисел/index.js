@@ -1,8 +1,8 @@
-let result = 0;
+const n = 15;
+let sum = "";
 
-for (let i = 1; i <= 5; i++) {
-  console.log("=> ", i, " <=");
-  for (let k = 1; k <= 9; k++) {
-    console.log(i + " x " + k + " =" + i * k);
-  }
+for (let i = 1; i <= n; i += 1) {
+  sum += String(i);
 }
+
+console.log(sum);
