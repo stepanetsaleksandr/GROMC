@@ -1,21 +1,15 @@
 function uniqueCount(array) {
-  if (!Array.isArray(arr)) {
+  if (!Array.isArray(array)) {
     return null;
   }
-
-  const newArr = array.slice();
-  let count = 0;
-  for (let j = 0; j < newArr.length; j += 1) {
-    for (let i = j + 1; i < newArr.length; i += 1) {
-      if (newArr[j] === newArr[i]) {
-        newArr[i] = null;
-      }
+  const newArray = [];
+  for (let i = 0; i < array.length; i++) {
+    if (!newArray.includes(array[i])) {
+      newArray.push(array[i]);
     }
   }
-  for (let k = 0; k <= newArr.length; k += 1) {
-    if (newArr[k] != null) count += 1;
-  }
-  return count;
+  return newArray.length;
 }
+console.log(uniqueCount([2, 2, 65, 8]));
 let arr = [-1, 4, 1, 8, 3, 4, 8, 8, 0, 0];
 console.log(uniqueCount(arr));
