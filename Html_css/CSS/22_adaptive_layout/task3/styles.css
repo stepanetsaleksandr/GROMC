@@ -12,5 +12,5 @@ picture {
 
 image {
   display: block;
-  max-width: 100vw;
+  max-width: 100%;
 }
