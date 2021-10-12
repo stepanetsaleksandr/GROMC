@@ -141,7 +141,7 @@ img {
   }
   .nav-section {
     display: flex;
-    width: 70%;
+    width: 80%;
   }
   .navigation {
     padding: 0.5em;
@@ -149,7 +149,7 @@ img {
   }
   .section {
     padding: 0.5em;
-    width: 80%;
+    width: 70%;
   }
   .news {
     padding: 0.5em;
