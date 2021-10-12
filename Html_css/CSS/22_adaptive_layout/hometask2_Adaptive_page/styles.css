@@ -111,8 +111,37 @@ img {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  main {
+    flex-direction: column;
+  }
   .nav-section {
     display: flex;
+  }
+
+  .navigation {
+    width: 20%;
+    flex-grow: 1;
+  }
+  .section {
+    width: 80%;
+    flex-grow: 1;
+  }
+  .news {
+    width: 100%;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    flex-direction: row;
+  }
+  .nav-section {
+    display: flex;
+    width: 80%;
+  }
+  .news {
+    width: 20%;
   }
 }
