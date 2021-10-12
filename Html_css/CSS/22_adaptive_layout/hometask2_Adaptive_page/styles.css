@@ -120,10 +120,12 @@ img {
   }
 
   .navigation {
+    padding: 0.5em;
     width: 20%;
     flex-grow: 1;
   }
   .section {
+    padding: 0.5em;
     width: 80%;
     flex-grow: 1;
   }
