@@ -141,6 +141,12 @@ img {
     display: flex;
     width: 80%;
   }
+  .navigation {
+    width: 20%;
+  }
+  .section {
+    width: 80%;
+  }
   .news {
     width: 20%;
   }
