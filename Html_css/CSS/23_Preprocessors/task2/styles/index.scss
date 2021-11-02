@@ -12,10 +12,18 @@ body {
 .square {
   width: 100px;
   height: 100px;
-  background-color: coral;
+  background-color: #ff7f50;
   margin: 16px;
 
   @include for-medium-up {
-    background-color: azure;
+    background-color: #8a2be2;
+  }
+
+  @include for-large-up {
+    background-color: #a61;
+  }
+
+  @include for-extra-up {
+    background-color: #c47;
   }
 }
