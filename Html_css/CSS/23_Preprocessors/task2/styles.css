@@ -13,8 +13,9 @@ body {
   width: 100px;
   height: 100px;
   background-color: #ff7f50;
-  margin: 16px;
+  margin: 8px;
 }
+
 @media screen and (min-width: 600px) {
   .square {
     background-color: #8a2be2;
@@ -31,15 +32,16 @@ body {
   }
 }
 
-@media (orientation: landscape) {
-  body {
+@media screen and (orientation: landscape) {
+  .container {
+    display: flex;
     flex-direction: row;
   }
 }
-@media (orientation: portrait) {
-  body {
+@media screen and (orientation: portrait) {
+  .container {
+    display: flex;
     flex-direction: column;
   }
 }
-
 /*# sourceMappingURL=styles.css.map */
