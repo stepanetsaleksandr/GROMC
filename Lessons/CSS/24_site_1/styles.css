@@ -14,7 +14,9 @@ body {
 .page {
   width: 1400px;
   margin: auto;
-  /* display: flex; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -93,4 +95,44 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.footer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.footer-links {
+  width: 1140px;
+  height: 50px;
+}
+
+.useful-link {
+  width: 1140px;
+  margin: 0 auto;
+  height: 338px;
+}
+
+.footer__line {
+  width: 100%;
+  border: 1px solid #2b292d;
+  opacity: 0.1;
+  margin: 0;
+}
+.footer-navigation {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.terms {
+  line-height: 50px;
+
+  font-size: 14px;
+}
+
+.terms__items {
+  text-decoration: none;
+  color: #2b292d;
+  opacity: 0.6;
+  margin-right: 22px;
 }
