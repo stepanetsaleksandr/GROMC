@@ -127,6 +127,8 @@ body {
 }
 .additional-navigation {
   margin-top: 60px;
+  margin-left: auto;
+  display: flex;
 }
 .footer__line {
   width: 100%;
