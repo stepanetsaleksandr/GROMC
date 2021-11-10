@@ -43,6 +43,7 @@
 
 .headline__actions {
   margin-top: 58px;
+  display: flex;
 }
 
 .headline__learn-more-button {
