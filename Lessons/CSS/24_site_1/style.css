@@ -744,6 +744,141 @@
   color: #3142c6;
 }
 
+.audience {
+  padding: 50px 15px;
+  background-color: #00a1c612;
+}
+@media screen and (min-width: 1400px) {
+  .audience {
+    margin: auto;
+    margin-top: 110px;
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .audience__details {
+    max-width: 555px;
+    margin: 108px auto 0 auto;
+  }
+}
+.audience__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+}
+.audience__subtitle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.357143px;
+  margin-top: 17px;
+  text-align: center;
+}
+@media screen and (min-width: 1400px) {
+  .audience__subtitle {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    margin-top: 24px;
+  }
+}
+.audience__description {
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0;
+  margin-top: 18px;
+  text-align: center;
+}
+@media screen and (min-width: 1400px) {
+  .audience__description {
+    margin-top: 30px;
+  }
+}
+.audience__actions {
+  margin-top: 30px;
+}
+@media screen and (min-width: 1400px) {
+  .audience__actions {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .audience__action-btn {
+    width: 100%;
+  }
+}
+.audience__action-btn:last-child {
+  margin-top: 12px;
+}
+@media screen and (min-width: 1400px) {
+  .audience__action-btn:last-child {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}
+.audience__list {
+  margin-top: 40px;
+  max-width: 1140px;
+}
+@media screen and (min-width: 1400px) {
+  .audience__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 111px auto 110px auto;
+  }
+}
+.audience__card.user-card {
+  margin-top: 15px;
+}
+.audience__card.user-card:first-child {
+  margin-top: 0;
+}
+@media screen and (min-width: 1400px) {
+  .audience__card.user-card {
+    flex: 1;
+    margin-top: 0;
+  }
+}
+
+.user-card {
+  margin: 0;
+  padding: 22px 0 33px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05), 0px 1px 3px Orgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: linear-gradient 180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%;
+  background-blend-mode: overlay, normal;
+  cursor: pointer;
+}
+@media screen and (min-width: 1400px) {
+  .user-card {
+    max-width: 262px;
+  }
+}
+.user-card:hover {
+  background-color: #3142c6;
+}
+.user-card:hover figcaption {
+  color: #fff;
+}
+.user-card__image {
+  max-width: 100%;
+}
+.user-card__caption {
+  margin-top: 22px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+}
+
 * {
   box-sizing: border-box;
 }
