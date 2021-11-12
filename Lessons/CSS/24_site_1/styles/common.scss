@@ -9,14 +9,20 @@
   border-radius: 2px;
 }
 
-@media screen and (min-width: 400px) {
-  .hide_desktop {
+.hide_desktop {
+  @include for-large-up {
     display: none;
   }
 }
 
-@media screen and (max-width: 399px) {
-  .hide_mobile {
+.hide_mobile {
+  @include for-large-down {
     display: none;
   }
 }
+
+// @media screen and (max-width: 399px) {
+//   .hide_mobile {
+//     display: none;
+//   }
+// }
