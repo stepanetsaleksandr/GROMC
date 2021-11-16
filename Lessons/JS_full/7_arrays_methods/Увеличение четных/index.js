@@ -1,11 +1,14 @@
+/* eslint-disable no-debugger */
 const increaseEvenEl = (arr, delta) => {
   if (!Array.isArray(arr)) {
     return null;
   }
   const res = arr.map((num) => {
-    if (!num % 2) {
+    debugger;
+    if (num % 2 === 0) {
       num += delta;
     }
+    return num;
   });
 
   return res;
