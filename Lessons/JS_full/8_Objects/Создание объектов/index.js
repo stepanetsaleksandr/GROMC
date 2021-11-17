@@ -1,0 +1,13 @@
+const transformToObject = (arr) => {
+  const obj = {};
+  arr.forEach((el) => {
+    obj[el] = el;
+  });
+  return obj;
+};
+
+// examples
+transformToObject(["a", 17.1, "John Doe"]); // ==> { a: 'a', '17.1': 17.1, 'John Doe': 'John Doe' }
+
+const result = transformToObject(["a", 17.1, "John Doe"]);
+console.log(result);
