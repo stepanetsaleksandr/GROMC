@@ -14,8 +14,8 @@
 // 2. iterate from 2 to i ==> num
 // 3. если остаток от деления i на num = 0 - число не простое
 
-function getPrimes(n) {
-  for (let i = 2; i <= n; i += 1) {
+function getPrimes(number) {
+  for (let i = 2; i <= number; i += 1) {
     for (let j = 2; j <= i; j += 1) {
       if (i % j === 0 && j !== i) {
         break;

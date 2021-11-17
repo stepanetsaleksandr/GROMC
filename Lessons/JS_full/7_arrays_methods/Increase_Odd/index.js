@@ -6,6 +6,7 @@ const increaseEvenEl = (arr, delta) => {
   const res = arr.map((num) => {
     debugger;
     if (num % 2 === 0) {
+      // eslint-disable-next-line no-param-reassign
       num += delta;
     }
     return num;

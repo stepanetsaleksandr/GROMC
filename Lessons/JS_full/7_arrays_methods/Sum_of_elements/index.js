@@ -3,6 +3,7 @@ const sum = (arr) => {
     return null;
   }
 
+  // eslint-disable-next-line no-shadow
   const sum = arr.reduce((total, amount) => total + amount);
   return sum;
 };
