@@ -1,18 +1,16 @@
-/* eslint-disable guard-for-in */
 /* eslint-disable no-restricted-syntax */
+/* eslint-disable guard-for-in */
 
 /* Для решения этой задачи используй for..in цикл. В реальных проектах это плохая практика,
  * лучше использовать методы класса Object - keys(), values(), entries(). Но мы с ними пока не познакомитись.
  * Чтобы eslint не ругался на эту ошибку, для этой задачи он отключен аннотацией eslint-disable
  * */
 
-const concatProps = (obj) => {
-  const arr = [];
+function getKeys(obj) {
   for (const key in obj) {
-    arr.push(obj[key]);
+    console.log(key);
   }
-  return arr;
-};
+}
 
 const user = {
   name: "John Doe",
@@ -21,4 +19,4 @@ const user = {
 };
 
 // examples
-console.log(concatProps(user)); // ==> ['John Doe', 17, 'football']
+getKeys(user); // ==> ['John Doe', 17, 'football']
