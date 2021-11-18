@@ -1,8 +1,8 @@
-function run() {
-  const a = 0;
-  const b = 1;
+// function run() {
+//   var a = 0,
+//     b = 1;
 
-  if (a == b) {
-    return c;
-  }
-}
+//   if (a == b) {
+//     return c;
+//   }
+// }

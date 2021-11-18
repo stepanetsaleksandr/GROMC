@@ -14,18 +14,21 @@
 // 2. iterate from 2 to i ==> num
 // 3. если остаток от деления i на num = 0 - число не простое
 
-function getPrimes(number) {
-  for (let i = 2; i <= number; i += 1) {
-    for (let j = 2; j <= i; j += 1) {
-      if (i % j === 0 && j !== i) {
-        break;
-      } else {
-        console.log(i);
-        break;
-      }
+function isPrime(number) {
+  for (let index = 2; index < number; index += 1) {
+    if (number % index === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function getPrimes(num) {
+  for (let i = 2; i <= num; i += 1) {
+    if (isPrime(i)) {
+      console.log(i);
     }
   }
 }
 
-const num = 150;
-getPrimes(num);
+getPrimes(15);
