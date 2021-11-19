@@ -1,41 +1,42 @@
 /* eslint-disable prefer-object-spread */
-/* eslint-disable no-param-reassign */
 
 /* В решения этой задачи используется метод Object.assign. В реальных проектах для такой задачи
  * лучше использовать spread опертор - это самый современный подход
- *
- * Так же плохой подход - мутировать входящие параметры функции
  *
  * Задачу мы делаем для практики и демонстрационных целей, поэтому чтобы eslint не ругался на эту ошибку,
  * для этой задачи он отключен аннотацией eslint-disable
  * */
 
-function addPropertyV1(userData, userId) {
-  userData.id = userId;
-  return userData;
+function mergeObjectsV1(obj1, obj2) {
+  return Object.assign(obj1, obj2);
 }
 
-function addPropertyV2(userData, userId) {
-  return Object.assign(userData, { id: userId });
+function mergeObjectsV2(obj1, obj2) {
+  return Object.assign(obj2, obj1);
 }
 
-function addPropertyV3(userData, userId) {
-  const newData = Object.assign({}, userData, { id: userId });
-  return newData;
+function mergeObjectsV3(obj1, obj2) {
+  const obj3 = { ...obj1, ...obj2 };
+  return obj3;
 }
 
-function addPropertyV4(userData, userId) {
-  const newData = { ...userData };
-  newData.id = userId;
-  return newData;
+function mergeObjectsV4(obj1, obj2) {
+  const obj3 = { ...obj2, ...obj1 };
+  return obj3;
 }
 
 // examples
-const user = {
-  name: 'Sam',
+const obj1 = {
+  name: 'Tom',
+  age: 17,
 };
 
-console.log(addPropertyV4(user, '1234567'));
-// ==> { name: 'Sam', id: '1234567' }
+const obj2 = {
+  name: 'Bob',
+  student: false,
+};
 
-console.log(user);
+console.log(mergeObjectsV1(obj1, obj2)); // ==> { name: 'Bob', age: 17, student: false }
+console.log(mergeObjectsV2(obj1, obj2)); // ==> { name: 'Tom', age: 17, student: false }
+console.log(mergeObjectsV3(obj1, obj2)); // ==> { name: 'Bob', age: 17, student: false }
+console.log(mergeObjectsV4(obj1, obj2)); // ==> { name: 'Tom', age: 17, student: false }
