@@ -21,7 +21,7 @@ const splitString = (text, len) => {
         break;
       }
 
-      strArr.push(chunk[0].toUpperCase() + chunk.slice(1));
+      strArr.push(chunk[0] + chunk.slice(1));
       startPositon += len;
     }
 
