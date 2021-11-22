@@ -25,7 +25,7 @@ it('остаток на счету по параметрам', () => {
 
 it('остаток на счету по параметрам', () => {
   const result = withdraw(['Ann', 'John', 'User'], [1400, 87, -6], 'John', 50);
-  expect(result).toEqual(37);
+  expect(result).not.toEqual(37);
 });
 
 it('остаток на счету по параметрам', () => {
