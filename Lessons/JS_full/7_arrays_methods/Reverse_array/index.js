@@ -1,4 +1,4 @@
-const reverseArray = (arg) => {
+const reverseArray = arg => {
   if (!Array.isArray(arg)) {
     return null;
   }
