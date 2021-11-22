@@ -19,6 +19,7 @@ const cleanTransactionsList = arr => {
       resArr.push(modString(arr[index]));
     } else resArr.push('$' + arr[index].toFixed(2));
   }
+
   resArr = resArr.filter(function (el) {
     return el != null;
   });
