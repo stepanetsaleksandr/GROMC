@@ -2,7 +2,7 @@ export default arr => {
   if (!Array.isArray(arr) || arr.length === 0) {
     return null;
   }
-  const absoluteValue = arr.map(num => num * num);
-  const min = Math.min(...absoluteValue);
+  const absValue = arr.map(num => num * num); // квадратим масив
+  const min = Math.min(...absValue); // находим минимум в масиве
   return min;
 };
