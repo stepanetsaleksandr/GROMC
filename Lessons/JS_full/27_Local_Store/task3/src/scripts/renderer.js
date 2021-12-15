@@ -17,8 +17,11 @@ const createCheckbox = ({ done, id }) => {
 
 const createListItem = ({ text, done, id }) => {
   const listItemElem = document.createElement('li');
+
   listItemElem.classList.add('list__item');
+
   const checkboxElem = createCheckbox({ done, id });
+
   if (done) {
     listItemElem.classList.add('list__item_done');
   }

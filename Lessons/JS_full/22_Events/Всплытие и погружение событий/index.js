@@ -22,8 +22,6 @@ const logGreyDiv = logTaget.bind(null, 'DIV', 'grey');
 const logGreyP = logTaget.bind(null, 'P', 'grey');
 const logGreySpan = logTaget.bind(null, 'SPAN', 'grey');
 
-const logStop = stop.bind(null);
-
 divElem.addEventListener('click', logGreyDiv, true);
 divElem.addEventListener('click', logGreenDiv);
 
@@ -33,9 +31,33 @@ pElem.addEventListener('click', logGreenP);
 spanElem.addEventListener('click', logGreySpan, true);
 spanElem.addEventListener('click', logGreenSpan);
 
-removeHandler.addEventListener('click', event => event.stopPropagation());
+const removeHandleads = () => {
+  divElem.removeEventListener('click', logGreenDiv);
+  divElem.removeEventListener('click', logGreyDiv, true);
 
-attachHandler.removeEventListener('click', event => event.stopPropagation());
+  pElem.removeEventListener('click', logGreenP);
+  pElem.removeEventListener('click', logGreyP, true);
+
+  spanElem.removeEventListener('click', logGreenSpan);
+  spanElem.removeEventListener('click', logGreySpan, true);
+};
+
+const logStop = removeHandleads.bind(null);
+removeHandler.addEventListener('click', logStop);
+
+const attachHandleads = () => {
+  divElem.addEventListener('click', logGreyDiv, true);
+  divElem.addEventListener('click', logGreenDiv);
+
+  pElem.addEventListener('click', logGreyP, true);
+  pElem.addEventListener('click', logGreenP);
+
+  spanElem.addEventListener('click', logGreySpan, true);
+  spanElem.addEventListener('click', logGreenSpan);
+};
+
+const logStart = attachHandleads.bind(null);
+attachHandler.addEventListener('click', logStart);
 
 const clean = clearTaget.bind(null);
 clearBtn.addEventListener('click', clean);
