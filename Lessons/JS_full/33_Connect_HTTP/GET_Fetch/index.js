@@ -1,85 +1,28 @@
-const listElem = document.querySelector('.list');
-const createBtn = document.querySelector('.btn');
-const addingText = document.querySelector('.task-input');
+const userAvatarElem = document.querySelector('.user__avatar');
+const userNameElem = document.querySelector('.user__name');
+const userLocationElem = document.querySelector('.user__location');
 
-const tasks = [
-  { id: 0, text: 'Buy milk', done: false },
-  { id: 1, text: 'Pick up Tom from airport', done: false },
-  { id: 2, text: 'Visit party', done: false },
-  { id: 3, text: 'Visit doctor', done: true },
-  { id: 4, text: 'Buy meat', done: true },
-];
+const defaultAvatar = 'https://avatars3.githubusercontent.com/u10001';
 
-const renderTasks = tasksList => {
-  listElem.innerHTML = '';
+userAvatarElem.src = defaultAvatar;
 
-  const tasksElems = tasksList
-    .sort((a, b) => a.done - b.done)
-    .map(({ text, done }, index) => {
-      const listItemElem = document.createElement('li');
-      listItemElem.classList.add('list__item');
-      const checkbox = document.createElement('input');
-
-      checkbox.setAttribute('type', 'checkbox');
-      checkbox.setAttribute('data-id', index);
-      checkbox.checked = done;
-
-      checkbox.classList.add('list__item-checkbox');
-      if (done) {
-        listItemElem.classList.add('list__item_done');
-      }
-
-      listItemElem.append(checkbox, text);
-
-      return listItemElem;
-    });
-
-  listElem.append(...tasksElems);
+const fetchUserData = userName => {
+  return fetch(`https://api.github.com/users/${userName}`).then(response => response.json());
 };
 
-// EVENTS
-// 1. add event to element
-// 2. create event handlers
-// list
-// click
-renderTasks(tasks);
+const renderUserData = userData => {
+  const { avatarUrl, name, location } = userData;
+  userAvatarElem.src = avatarUrl;
+  userNameElem.textContent = name;
+  userLocationElem.textContent = location ? `from ${location}` : '';
+};
 
-// algo
-// get task id
-// find task by id
-// update task
-// re-render
+const showUserBtnElem = document.querySelector('.name-form__btn');
+const userNameInputElem = document.querySelector('.name-form__input');
 
-function updateTaskHendler(event) {
-  // console.dir(event.target.classList.contains('list__item-checkbox'));
-  // console.dir(event.target.getAttribute('list__item-checkbox'));
-  if (!event.target.classList.contains('list__item-checkbox')) {
-    return;
-  }
-  const { id } = event.target.dataset;
-  console.log(event.target.dataset.id); // находим id таски
-  // event.target.dataset.id
-}
+const onSearchUser = () => {
+  const userName = userNameInputElem.value;
+  fetchUserData(userName).then(userData => renderUserData(userData));
+};
 
-const res = listElem.addEventListener('click', updateTaskHendler);
-
-// callback
-// input
-// out
-
-// WEB FLOW
-// 1. get data
-// 2. render
-// 3. update data, dont update DOM
-// 4. re-render
-
-/// ADD NEW TASK ///
-function addTaskHendler() {
-  if (addingText.value) {
-    tasks.push({ id: tasks.length, text: addingText.value, done: false });
-  }
-  addingText.value = '';
-  renderTasks(tasks);
-}
-
-createBtn.addEventListener('click', addTaskHendler);
+showUserBtnElem.addEventListener('click', onSearchUser);
