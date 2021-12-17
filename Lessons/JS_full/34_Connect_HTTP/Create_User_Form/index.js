@@ -18,7 +18,10 @@ const onInput = () => {
 
 const sendData = () => {
   // FormData создает новую форму из текущей, Object.fromEntries создает обьект с даными формы
-  const formData = Object.fromEntries(new FormData(loginForm));
+  const formData = [...new FormData(loginForm)].reduce(
+    (acc, [prop, value]) => ({ ...acc, [prop]: value }),
+    {},
+  );
   const sendingData = JSON.stringify(formData);
   // Передача данных на сервер и запись методом Post
   return fetch(baseUrl, {
