@@ -1,20 +1,17 @@
 const baseUrl = 'https://61ba094948df2f0017e5a8b2.mockapi.io/api/v1/users';
 
-const emailInput = document.querySelector('input[name=email]');
-const nameInput = document.querySelector('input[name=name]');
-const passwordInput = document.querySelector('input[name=password]');
 const submitButton = document.querySelector('.submit-button');
 const loginForm = document.querySelector('.login-form');
 
-const user = {};
-
 const onInput = () => {
-  const isValidForm = loginForm.reportValidity();
-  if (!isValidForm) {
-    submitButton.setAttribute('disabled', true);
-  } else {
-    submitButton.removeAttribute('disabled');
-  }
+  // const isValidForm = loginForm.reportValidity();
+  // if (!isValidForm) {
+  //   submitButton.setAttribute('disabled', true);
+  // } else {
+  //   submitButton.removeAttribute('disabled');
+  // }
+
+  submitButton.setAttribute('disabled', !loginForm.reportValidity());
 };
 
 const sendData = () => {

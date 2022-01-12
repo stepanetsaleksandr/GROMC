@@ -4,12 +4,14 @@ const submitButton = document.querySelector('.submit-button');
 const loginForm = document.querySelector('.login-form');
 
 const onInput = () => {
-  const isValidForm = loginForm.reportValidity();
-  if (!isValidForm) {
-    submitButton.setAttribute('disabled', true);
-  } else {
-    submitButton.removeAttribute('disabled');
-  }
+  // const isValidForm = loginForm.reportValidity();
+  // if (!isValidForm) {
+  //   submitButton.setAttribute('disabled', true);
+  // } else {
+  //   submitButton.removeAttribute('disabled');
+  // }
+
+  submitButton.setAttribute('disabled', !loginForm.reportValidity());
 };
 
 const sendData = () => {
