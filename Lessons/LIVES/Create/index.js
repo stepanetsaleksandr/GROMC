@@ -4,36 +4,28 @@ const submitButton = document.querySelector('.submit-button');
 const loginForm = document.querySelector('.login-form');
 
 const onInput = () => {
-  // const isValidForm = loginForm.reportValidity();
-  // if (!isValidForm) {
-  //   submitButton.setAttribute('disabled', true);
-  // } else {
-  //   submitButton.removeAttribute('disabled');
-  // }
-
-  submitButton.setAttribute('disabled', !loginForm.reportValidity());
+  if (!loginForm.reportValidity()) {
+    submitButton.setAttribute('disabled', true);
+  } else {
+    submitButton.removeAttribute('disabled');
+  }
 };
 
-const sendData = () => {
+const onSubmit = event => {
+  event.preventDefault();
   const formData = [...new FormData(loginForm)].reduce(
     (acc, [prop, value]) => ({ ...acc, [prop]: value }),
     {},
   );
-
   const sendingData = JSON.stringify(formData);
 
-  return fetch(baseUrl, {
+  fetch(baseUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
     },
     body: sendingData,
-  });
-};
-
-const onSubmit = event => {
-  event.preventDefault();
-  sendData()
+  })
     .then(response => response.json())
     .then(user => {
       alert(JSON.stringify(user));
